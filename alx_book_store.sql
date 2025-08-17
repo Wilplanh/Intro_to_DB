@@ -29,8 +29,8 @@ CREATE TABLE Orders (
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
-CREATE TABLE Order_Items (
-    order_detail_id INT PRIMARY KEY,
+CREATE TABLE Order_Details (
+    orderdetailid INT PRIMARY KEY,
     order_id INT NOT NULL,
     book_id INT NOT NULL FOREIGN KEY REFERENCES Books(book_id),
     quantity DOUBLE NOT NULL,
