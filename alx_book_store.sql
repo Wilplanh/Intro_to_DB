@@ -30,7 +30,7 @@ CREATE TABLE Orders (
 );
 
 CREATE TABLE Order_Items (
-    orderdetailid INT PRIMARY KEY,
+    order_detail_id INT PRIMARY KEY,
     order_id INT NOT NULL,
     book_id INT NOT NULL FOREIGN KEY REFERENCES Books(book_id),
     quantity DOUBLE NOT NULL,
